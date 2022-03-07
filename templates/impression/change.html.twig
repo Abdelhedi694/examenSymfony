@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ImpressionController!{% endblock %}
+{% form_theme formulaire 'bootstrap_5_layout.html.twig' %}
+{% block body %}
+
+    {{ form_start(formulaire) }}
+    {{ form_widget(formulaire.content) }}
+    <input type="submit" value="Modifier" class="btn btn-success">
+    {{ form_end(formulaire) }}
+
+
+{% endblock %}

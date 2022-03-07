@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Film{% endblock %}
+{% form_theme formulaire 'bootstrap_5_layout.html.twig' %}
+{% block body %}
+
+
+
+    {{ form_start(formulaire) }}
+    {{ form_row(formulaire.name) }}
+    {{ form_row(formulaire.description) }}
+    {{ form_row(formulaire.director) }}
+    {{ form_row(formulaire.date) }}
+    {{ form_row(formulaire.categorie) }}
+    {{ form_widget(formulaire.imageFile) }}
+    <input type="submit" value="Enregistrer" class="btn btn-success">
+    {{ form_end(formulaire) }}
+
+
+
+
+{% endblock %}
